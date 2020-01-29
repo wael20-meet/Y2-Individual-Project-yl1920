@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Full Motion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Pet treat</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{url_for('static',filename='assets/css/main.css')}}"/>
+	</head>
+	<body id="top">
+
+			<!-- Banner -->
+			<!--
+				To use a video as your background, set data-video to the name of your video without
+				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+				formats to work correctly.
+			-->
+				<section id="banner" data-video="images/banner">
+					<div class="inner">
+						<header>
+							<h1>Pet Treat</h1>
+							<p>A responsive video gallery template with a functional lightbox<br />
+							designed by <a href="https://templated.co/">Templated</a> and released under the Creative Commons License.</p>
+						</header>
+						<a href="#main" class="more">Learn More</a>
+					</div>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
+
+					<!-- Boxes -->
+						<div class="thumbnails">
+
+							<div class="box">
+								<a href="/first_aid" class="image fit"><img src="{{url_for('static',filename='images/first_aid.jpg')}}" alt="" /></a>
+								<div class="inner">
+									<h3>First Aid</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a  href="/first_aid" class="button fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="/vet" class="image fit"><img src="{{url_for('static',filename='images/vet.jpg')}}" alt="" /></a>
+								<div class="inner">
+									<h3>Look for a vet</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="/vet" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="/login" class="image fit"><img src="{{url_for('static',filename='images/help.jpg')}}" alt="" /></a>
+								<div class="inner">
+									<h3>Feedback</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="/login" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+
+
+
+				</footer>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/jquery.poptrox.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/skel.min.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/util.js')}}"></script>
+			<script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+
+	</body>
+</html> 

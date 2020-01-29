@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!--
+  Full Motion by TEMPLATED
+  templated.co @templatedco
+  Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>Login page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{url_for('static',filename='assets/css/main.css')}}"/>
+  </head>
+  <body id="top">
+
+      <!-- Banner -->
+      <!--
+        To use a video as your background, set data-video to the name of your video without
+        its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+        formats to work correctly.
+      -->
+<section id="banner" data-video="images/banner">
+          <div class="inner">
+            <header>
+              <h1>Login</h1>
+
+            </header>
+            <a href="#main" class="more">Learn More</a>
+          </div>
+        </section>
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+          <!-- Boxes -->
+            <div class="thumbnails"> 
+
+    <form class="form-signin" action="/login" method="post">
+  <label for="text" class="sr-only">username</label>
+  <input name="username" type="text" id="text" class="form-control" placeholder="username" required autofocus>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
+  <div class="checkbox mb-3">
+
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+  <p class="mt-5 mb-3 text-muted">&copy;2019</p>
+<a  href="/signup" class="button fit" data-poptrox="youtube,800x400">Don't have an account? click here</a>
+
+</form>
+</div>
+<div class="flex_space"></div>
+
+</body>
+</html>
+
+
+
+
+        </footer>
+
+    <!-- Scripts -->
+      <script src="{{url_for('static',filename='assets/js/jquery.min.js')}}"></script>
+      <script src="{{url_for('static',filename='assets/js/jquery.scrolly.min.js')}}"></script>
+      <script src="{{url_for('static',filename='assets/js/jquery.poptrox.min.js')}}"></script>
+      <script src="{{url_for('static',filename='assets/js/skel.min.js')}}"></script>
+      <script src="{{url_for('static',filename='assets/js/util.js')}}"></script>
+      <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+
+  </body>
