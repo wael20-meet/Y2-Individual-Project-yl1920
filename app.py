@@ -1,4 +1,6 @@
 from flask import Flask, render_template,request
+
+from databases import *
 app = Flask(__name__)
  
 @app.route('/')
@@ -18,6 +20,10 @@ def Signup():
     if request.method == 'GET':
         return render_template('signup.html')
     else:    
+        name = request.form['username']
+        password = request.form['password']
+        add(name, password)        
+
         return render_template("feedback.html")
 
 @app.route('/feedback')
@@ -29,10 +35,13 @@ def Login():
     if request.method == 'GET':
         return render_template('login.html')
     else:    
-        msg = Message('Hello', sender = 'yoyo20meet@gmail.com', recipients = ['ron12harel@gmail.com'])
-        msg.body = request.form['message'] +"\n"+request.form["login.html"]
-        mail.send(msg)
-        return render_template("login.html")
+        name = request.form['username']
+        password = request.form['password']
+        check(name,password)
+        if done==True:
+            return render_template("feedback.html")
+        else:
+            return render_template('login.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
