@@ -22,6 +22,12 @@ def check(name,password):
 		User).filter_by(
        name=name).first()
 	if user.password== password:
-		done=True
+		return True
 	else:
-		done=False
+		return False
+
+def users():
+	return session.query(User).all()
+
+
+print(users()[0].password)

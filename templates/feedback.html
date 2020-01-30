@@ -18,7 +18,8 @@
         To use a video as your background, set data-video to the name of your video without
         its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
         formats to work correctly.
-      -->
+      --
+      >
 <section id="banner" data-video="images/banner">
           <div class="inner">
             <header>
@@ -29,7 +30,9 @@
           </div>
         </section>
 
-      <!-- Main -->
+       Main -->
+
+      <form method="POST" action="/feedback">
         <div id="main">
           <div class="inner">
 
@@ -40,12 +43,12 @@
   <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
   <label for="message" class="sr-only">message</label>
   <input type="text" id="inputPassword" name="message" class="form-control" placeholder="message" required>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+  <input type="submit" name="submit" value="send" class="btn btn-lg btn-primary btn-block">
 
   </div>
   
 <div class="flex_space"></div>
-
+</div>
 </body>
 </html>
 

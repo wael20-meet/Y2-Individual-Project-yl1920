@@ -26,9 +26,12 @@ def Signup():
 
         return render_template("feedback.html")
 
-@app.route('/feedback')
+@app.route('/feedback', methods=["GET","POST"])
 def feedback():
-    return render_template('feedback.html')
+    if request.method =="GET":
+        return render_template('feedback.html')
+    else:
+        return render_template('index.html')
 
 @app.route('/login' , methods=['GET' ,'POST'])
 def Login():
@@ -37,8 +40,8 @@ def Login():
     else:    
         name = request.form['username']
         password = request.form['password']
-        check(name,password)
-        if done==True:
+        done = check(name,password)
+        if done:
             return render_template("feedback.html")
         else:
             return render_template('login.html')
